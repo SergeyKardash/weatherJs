@@ -1,8 +1,8 @@
 class Weather {
-  constructor(city, state){
+  constructor(city){
     this.apiKey = '25d93a818e5a40a0',
     this.city = city,
-    this.state = state
+    this.state = 'UA'
   }
 
   // Fetch weather from API
@@ -15,8 +15,7 @@ class Weather {
    return responseData.current_observation
   }
 
-  changeLocation(city, state) {
-    this.sity = city;
-    this.state = state;
+  changeLocation(city) {
+    this.city = city;
   }
 }
